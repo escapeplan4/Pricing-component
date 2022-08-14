@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+	--very-light-grayish-blue: hsl(240, 78%, 98%);
+	--light-grayish-blue: hsl(234, 14%, 74%);
+	--grayish-blue: hsl(233, 13%, 49%);
+	--dark-grayish-blue: hsl(232, 13%, 33%);
+	--start: hsl(236, 72%, 79%);
+	--finish: hsl(237, 63%, 64%);
+	--light-grayish-blue-light: hsl(234, 14%, 90%);
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
+body{
+
+	background-image: url('images/bg-bottom.svg'), url('images/bg-top.svg');
+	background-position: left bottom , top right;
+	background-repeat: no-repeat, no-repeat;
+	background-color: var(--very-light-grayish-blue);
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	color: var(--dark-grayish-blue);
+	display: flex;
+	font-size: 15px;
+	flex-direction: column;
+
+}
+.input-switch{
+	display: inline-block;
+}
+.professional{
+	background-image: linear-gradient(var(--start) , var(--finish));
+	color: white;
+	
+	height: 430px;
+	
+	
+	
+}
+.item{
+	border-radius: 9px;
+	padding: 5px 25px;
+	width: 320px;
+}
+
+.basic , .master{
+	background-color: white;
+	
+	
+	
+
+
+
+}
+.basic button, .master button{
+	background-image: linear-gradient(to right,var(--start) , var(--finish));
+	color: white;
+
+
+}
+
+.professional button{
+	background-color:white ;
+	color: var(--finish);
+
+
+}
+.conteiner{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: auto;
+	flex-direction: row;
+	font-size: 0.9rem;
+	align-items: center;
+	color: var(--grayish-blue);
+
+
+
+
+}
+
+
+  input[type="checkbox"] {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+   
+    label{
+    	color: var(--light-grayish-blue);
+    }
+    .price, .storage, .users, .send, .title, .button{
+    	display: flex;
+    	justify-content: center;
+    	padding: 10px;
+
+    	
+    }
+    .basic .price, .master .price{
+    	color: var(--dark-grayish-blue);
+    	
+    }
+
+   button{
+   	border: none;
+   	border-radius: 5px;
+   	font-family: Montserrat, sans-serif;
+   	font-weight: 700;
+   	width: 100%;
+   	padding: 10px;
+   	margin-top: 10px;
+   	cursor: pointer;
+
+   }
+   .price{
+   	font-size: 4rem;
+   }
+   span{
+   	font-size: 2rem;
+   	align-self: center;
+   }
+   hr{
+   	border: none;
+   	background-color: rgba(255,255,255,.25);
+   	height: 1px;
+   	margin: 5px;
+   }
+   .basic hr, .master hr{
+   	border: none;
+	height: 1px;
+	/* Set the hr color */
+	/* color: var(--light-grayish-blue); */
+	background-color: var(--light-grayish-blue-light);
+
+   }
+.title{
+	padding: 5px;
+}
+.conteiner .title{
+	padding: 20px;
+}
+.conteiner .professional .title{
+	padding-top: 35px;
+}
+.conteiner .input-switch{
+	padding: 20px;
+}
